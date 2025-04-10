@@ -40,6 +40,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -81,6 +82,8 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jButton2.setText("jButton2");
 
+        jButton3.setText("jButton3");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -111,7 +114,11 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addComponent(btndelete))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(130, 130, 130)
-                        .addComponent(jButton2)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jButton3))
+                            .addComponent(jButton2))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(68, 68, 68))
@@ -146,7 +153,9 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addComponent(btndelete))
                                 .addGap(85, 85, 85)))
                         .addComponent(jButton2)
-                        .addGap(221, 221, 221))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton3)
+                        .addGap(186, 186, 186))))
         );
 
         pack();
@@ -241,6 +250,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btndelete;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
